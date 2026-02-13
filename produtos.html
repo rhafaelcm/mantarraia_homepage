@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça todos os produtos da Mantarraia Sistemas. RaiaDoc, RaiaAgenda e outras soluções em software.">
+    <meta name="keywords" content="Mantarraia, produtos, software, RaiaDoc, RaiaAgenda, gestão municipal, agendamento">
+    <meta name="author" content="Mantarraia Sistemas">
+    
+    <title>Produtos - Mantarraia Sistemas</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/Mantarraia_favicon.png">
+    <link rel="apple-touch-icon" href="img/Mantarraia_favicon.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-raia fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="img/Mantarraia_Branca.png" alt="Mantarraia Sistemas" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-produtos active" href="produtos.html">
+                            <i class="bi bi-box-seam me-1"></i> Nossos Produtos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <a href="/" class="btn-back mb-3 d-inline-block">
+                    <i class="bi bi-arrow-left"></i> Voltar ao Início
+                </a>
+                <h1 class="page-title">Nossos Produtos</h1>
+                <p class="page-subtitle">Conheça todas as soluções desenvolvidas pela Mantarraia Sistemas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products List -->
+    <section class="section section-light">
+        <div class="container">
+            <!-- Search -->
+            <div class="search-container">
+                <div class="position-relative">
+                    <input type="text" 
+                           id="searchProduto" 
+                           class="form-control search-input" 
+                           placeholder="Buscar produto..."
+                           autocomplete="off">
+                    <i class="bi bi-search search-icon"></i>
+                </div>
+                <p class="text-muted text-center mt-2 small">
+                    Digite o nome do produto ou categoria para filtrar
+                </p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row" id="produtosList">
+                <!-- Os produtos serão renderizados aqui pelo JavaScript -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="bi bi-search d-block"></i>
+                <h4>Nenhum produto encontrado</h4>
+                <p>Tente buscar por outro termo ou verifique a ortografia.</p>
+            </div>
+
+            <!-- Info Card -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <div class="alert alert-light border">
+                        <div class="d-flex align-items-start">
+                            <i class="bi bi-info-circle text-primary fs-4 me-3"></i>
+                            <div>
+                                <h5 class="alert-heading mb-2">Precisa de uma solução personalizada?</h5>
+                                <p class="mb-2">
+                                    A Mantarraia está sempre desenvolvendo novas soluções. Se você precisa de um 
+                                    software sob medida para sua necessidade, entre em contato conosco.
+                                </p>
+                                <a href="contato.html" class="btn btn-outline-primary btn-sm">
+                                    <i class="bi bi-envelope me-1"></i> Entrar em Contato
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="cta-title">Quer uma solução personalizada?</h2>
+            <p class="cta-text">
+                Entre em contato e descubra como a Mantarraia pode desenvolver a solução ideal para você.
+            </p>
+            <a href="contato.html" class="btn btn-hero">
+                <i class="bi bi-envelope me-2"></i>Fale Conosco
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-raia">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="img/Mantarraia_Branca.png" alt="Mantarraia Sistemas" class="footer-logo">
+                    <p class="footer-text">
+                        Mantarraia Sistemas - Softhouse especializada no desenvolvimento 
+                        de soluções em software que transformam a gestão.
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-3">Links Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="/">Início</a></li>
+                        <li><a href="/#sobre">Sobre Nós</a></li>
+                        <li><a href="/#produtos">Produtos</a></li>
+                        <li><a href="produtos.html">Todos os Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3">Contato</h5>
+                    <p class="footer-text">
+                        <i class="bi bi-envelope me-2"></i>
+                        <a href="mailto:mantarraia.sistemas@gmail.com" class="text-white-50">
+                            mantarraia.sistemas@gmail.com
+                        </a>
+                    </p>
+                    <p class="footer-text mb-0">
+                        <i class="bi bi-globe me-2"></i>
+                        <a href="https://mantarraia.com.br" class="text-white-50">
+                            www.mantarraia.com.br
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; <span id="currentYear">2025</span> Mantarraia Sistemas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
