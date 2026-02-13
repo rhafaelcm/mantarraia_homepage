@@ -27,10 +27,10 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -40,7 +40,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-raia fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="img/Mantarraia_Branca.png" alt="Mantarraia Sistemas" height="40">
+                <img src="img/Mantarraia_Branca.png" alt="Mantarraia Sistemas" height="36">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menu">
                 <span class="navbar-toggler-icon"></span>
@@ -74,8 +74,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content text-center text-lg-start">
-                    <img src="img/Mantarraia_Branca.png" alt="Mantarraia Sistemas" class="hero-logo mb-4">
-                    <h1 class="hero-title">Soluções em Software que Transformam</h1>
+                    <img src="img/Mantarraia_Branca.png" alt="Mantarraia Sistemas" class="hero-logo mb-3">
+                    <h1 class="hero-title">Soluções em Software <span class="text-accent">que Transformam</span></h1>
                     <p class="hero-subtitle">
                         Somos uma softhouse dedicada ao desenvolvimento de sistemas inteligentes 
                         que simplificam processos e potencializam resultados para o setor público e privado.
@@ -89,8 +89,42 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block text-center">
-                    <img src="img/Mantarraia_Branca.png" alt="Mantarraia Sistemas" class="img-fluid" style="max-width: 400px; opacity: 0.15;">
+                <div class="col-lg-5 offset-lg-1 d-none d-lg-block hero-visual">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="hero-mini-card d-flex align-items-center gap-3">
+                                <div class="mini-icon">
+                                    <i class="bi bi-building"></i>
+                                </div>
+                                <div>
+                                    <h6>RaiaDoc</h6>
+                                    <p>Gestão Municipal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="hero-mini-card d-flex align-items-center gap-3">
+                                <div class="mini-icon">
+                                    <i class="bi bi-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <h6>RaiaAgenda</h6>
+                                    <p>Gestão de Agendamentos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="hero-mini-card d-flex align-items-center gap-3">
+                                <div class="mini-icon">
+                                    <i class="bi bi-rocket-takeoff"></i>
+                                </div>
+                                <div>
+                                    <h6>Em Breve</h6>
+                                    <p>Novas soluções a caminho</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,13 +134,19 @@
     <section id="sobre" class="section section-light">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+                    <div class="about-image-wrapper">
+                        <img src="img/Mantarraia.png" alt="Mantarraia Logo" class="img-fluid" style="max-width: 260px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <span class="section-label">Sobre Nós</span>
                     <h2 class="section-title">Quem é a Mantarraia?</h2>
-                    <p class="lead mb-4">
+                    <p class="lead mb-4" style="color: var(--gray-700);">
                         A Mantarraia Sistemas é uma softhouse brasileira especializada no desenvolvimento 
                         de soluções em software sob medida para diferentes segmentos do mercado.
                     </p>
-                    <p class="mb-4">
+                    <p class="mb-4" style="color: var(--gray-600);">
                         Somos a empresa por trás de produtos como o RaiaDoc e o RaiaAgenda, 
                         desenvolvendo tecnologia que simplifica a gestão e otimiza processos. 
                         Cada software que criamos nasce do compromisso com a inovação, a qualidade 
@@ -119,11 +159,6 @@
                         <li>Inovação e melhoria contínua em todos os produtos</li>
                     </ul>
                 </div>
-                <div class="col-lg-6 text-center">
-                    <div class="p-4 bg-light rounded-4">
-                        <img src="img/Mantarraia.png" alt="Mantarraia Logo" class="img-fluid" style="max-width: 300px;">
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -132,6 +167,7 @@
     <section id="produtos" class="section section-gray">
         <div class="container">
             <div class="text-center mb-5">
+                <span class="section-label">Portfólio</span>
                 <h2 class="section-title">Nossos Produtos</h2>
                 <p class="section-subtitle">
                     Soluções desenvolvidas para diferentes necessidades, com qualidade e tecnologia de ponta
@@ -139,62 +175,66 @@
             </div>
             <div class="row g-4">
                 <!-- RaiaDoc -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="product-card animate-on-scroll">
+                <div class="col-lg-6">
+                    <div class="product-card product-card-horizontal animate-on-scroll">
                         <div class="product-image-placeholder">
                             <img src="img/raiadoc_painel-600px.png" alt="RaiaDoc - Painel do Sistema">
                         </div>
-                        <span class="product-badge badge-ativo">Ativo</span>
-                        <h3 class="product-name">RaiaDoc</h3>
-                        <p class="product-category">Gestão Municipal</p>
-                        <p class="product-description">
-                            Sistema completo de gestão de documentação e contabilidade municipal, 
-                            desenvolvido para atender prefeituras e órgãos públicos com eficiência e transparência.
-                        </p>
-                        <a href="https://raiadoc.com.br" class="btn btn-product">
-                            <i class="bi bi-box-arrow-up-right me-2"></i>Conhecer
-                        </a>
+                        <div class="product-card-body">
+                            <span class="product-badge badge-ativo">Ativo</span>
+                            <h3 class="product-name">RaiaDoc</h3>
+                            <p class="product-category">Gestão Municipal</p>
+                            <p class="product-description">
+                                Sistema completo de gestão de documentação e contabilidade municipal, 
+                                desenvolvido para prefeituras e órgãos públicos.
+                            </p>
+                            <a href="https://raiadoc.com.br" class="btn btn-product">
+                                <i class="bi bi-box-arrow-up-right me-2"></i>Conhecer
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- RaiaAgenda -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="product-card animate-on-scroll">
+                <div class="col-lg-6">
+                    <div class="product-card product-card-horizontal animate-on-scroll">
                         <div class="product-image-placeholder">
                             <img src="img/raiaagenda_painel-600px.png" alt="RaiaAgenda - Painel do Sistema">
                         </div>
-                        <span class="product-badge badge-ativo">Ativo</span>
-                        <h3 class="product-name">RaiaAgenda</h3>
-                        <p class="product-category">Gestão de Agendamentos</p>
-                        <p class="product-description">
-                            Plataforma inteligente para agendamento e reserva de horários, 
-                            ideal para escolas, laboratórios e espaços compartilhados.
-                        </p>
-                        <a href="https://raiaagenda.com.br" class="btn btn-product">
-                            <i class="bi bi-box-arrow-up-right me-2"></i>Conhecer
-                        </a>
+                        <div class="product-card-body">
+                            <span class="product-badge badge-ativo">Ativo</span>
+                            <h3 class="product-name">RaiaAgenda</h3>
+                            <p class="product-category">Gestão de Agendamentos</p>
+                            <p class="product-description">
+                                Plataforma inteligente para agendamento e reserva de horários, 
+                                ideal para escolas e espaços compartilhados.
+                            </p>
+                            <a href="https://raiaagenda.com.br" class="btn btn-product">
+                                <i class="bi bi-box-arrow-up-right me-2"></i>Conhecer
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <!-- Em Breve -->
+            </div>
+            <!-- Em Breve -->
+            <div class="row justify-content-center mt-4">
                 <div class="col-md-6 col-lg-4">
-                    <div class="product-card product-card-soon animate-on-scroll">
-                        <div class="product-image-placeholder placeholder-soon">
+                    <div class="product-card product-card-soon animate-on-scroll text-center" style="padding: 2rem;">
+                        <div style="font-size: 2.5rem; color: var(--gray-400); margin-bottom: 1rem;">
                             <i class="bi bi-rocket-takeoff"></i>
                         </div>
-                        <span class="product-badge badge-soon">Em Breve</span>
-                        <h3 class="product-name">Novos Produtos</h3>
-                        <p class="product-category">Em Desenvolvimento</p>
-                        <p class="product-description">
-                            Estamos constantemente desenvolvendo novas soluções. 
-                            Em breve, mais produtos para atender ainda mais segmentos do mercado.
+                        <span class="product-badge badge-soon" style="margin: 0 0 0.75rem;">Em Breve</span>
+                        <h3 class="product-name" style="margin: 0 0 0.25rem; font-size: 1.15rem;">Novos Produtos</h3>
+                        <p class="product-description" style="margin: 0 0 1rem; font-size: 0.85rem;">
+                            Estamos constantemente desenvolvendo novas soluções para atender ainda mais segmentos.
                         </p>
-                        <a href="contato.html" class="btn btn-product-outline">
+                        <a href="contato.html" class="btn btn-product-outline" style="margin: 0; font-size: 0.85rem;">
                             <i class="bi bi-envelope me-2"></i>Saiba Mais
                         </a>
                     </div>
                 </div>
             </div>
             <div class="text-center mt-5">
-                <a href="produtos.html" class="btn btn-hero" style="background: var(--base-color); color: white; border-color: var(--base-color);">
+                <a href="produtos.html" class="btn btn-hero">
                     <i class="bi bi-grid me-2"></i>Ver Todos os Produtos
                 </a>
             </div>
@@ -202,9 +242,10 @@
     </section>
 
     <!-- Diferenciais -->
-    <section id="diferenciais" class="section section-gradient">
+    <section id="diferenciais" class="section section-dark">
         <div class="container">
             <div class="text-center mb-5">
+                <span class="section-label">Diferenciais</span>
                 <h2 class="section-title">Por que a Mantarraia?</h2>
                 <p class="section-subtitle">
                     Conheça os diferenciais que fazem nossos produtos se destacarem
@@ -287,73 +328,34 @@
         </div>
     </section>
 
-    <!-- Por que escolher -->
-    <section class="section section-light">
+    <!-- Nossos Números -->
+    <section class="section-stats">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                    <h2 class="section-title">Nossos Números</h2>
-                    <p class="lead mb-4">
-                        Construindo soluções que fazem a diferença no dia a dia de nossos clientes.
-                    </p>
-                    <div class="mb-4">
-                        <div class="d-flex align-items-start mb-3">
-                            <div class="feature-icon me-3" style="width: 50px; height: 50px; min-width: 50px;">
-                                <i class="bi bi-lightning" style="font-size: 1.25rem;"></i>
-                            </div>
-                            <div>
-                                <h5 class="mb-1">Rápido e Eficiente</h5>
-                                <p class="text-muted mb-0">Sistemas otimizados para resposta rápida mesmo com grande volume de dados.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-start mb-3">
-                            <div class="feature-icon me-3" style="width: 50px; height: 50px; min-width: 50px;">
-                                <i class="bi bi-cloud" style="font-size: 1.25rem;"></i>
-                            </div>
-                            <div>
-                                <h5 class="mb-1">100% na Nuvem</h5>
-                                <p class="text-muted mb-0">Acesse de qualquer lugar, sem necessidade de instalação local.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-start">
-                            <div class="feature-icon me-3" style="width: 50px; height: 50px; min-width: 50px;">
-                                <i class="bi bi-arrow-repeat" style="font-size: 1.25rem;"></i>
-                            </div>
-                            <div>
-                                <h5 class="mb-1">Sempre Atualizado</h5>
-                                <p class="text-muted mb-0">Novas funcionalidades e melhorias implementadas continuamente.</p>
-                            </div>
-                        </div>
+            <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="2">2</div>
+                        <div class="stat-label">Produtos Ativos</div>
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="row g-3 justify-content-center">
-                        <div class="col-6">
-                            <div class="stat-item bg-light rounded-4">
-                                <div class="stat-number" data-count="2">2</div>
-                                <div class="stat-label">Produtos Ativos</div>
-                            </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Disponibilidade</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="100">100</div>
+                        <div class="stat-label">% Online</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">
+                            <i class="bi bi-infinity"></i>
                         </div>
-                        <div class="col-6">
-                            <div class="stat-item bg-light rounded-4">
-                                <div class="stat-number">24/7</div>
-                                <div class="stat-label">Disponibilidade</div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="stat-item bg-light rounded-4">
-                                <div class="stat-number" data-count="100">100</div>
-                                <div class="stat-label">% Online</div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="stat-item bg-light rounded-4">
-                                <div class="stat-number">
-                                    <i class="bi bi-infinity"></i>
-                                </div>
-                                <div class="stat-label">Evolução Contínua</div>
-                            </div>
-                        </div>
+                        <div class="stat-label">Evolução Contínua</div>
                     </div>
                 </div>
             </div>
@@ -422,7 +424,7 @@
     </footer>
 
     <!-- Back to Top Button -->
-    <a href="#" id="backToTop" class="btn btn-primary position-fixed" style="bottom: 20px; right: 20px; z-index: 1000; display: none; border-radius: 50%; width: 50px; height: 50px; padding: 0; line-height: 50px; text-align: center;">
+    <a href="#" id="backToTop" class="btn position-fixed" style="bottom: 20px; right: 20px; z-index: 1000; display: none; border-radius: 10px; width: 46px; height: 46px; padding: 0; line-height: 46px; text-align: center; background: var(--primary-color); color: white; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);">
         <i class="bi bi-arrow-up"></i>
     </a>
 
