@@ -137,7 +137,7 @@ function renderProducts(list) {
                         ${prod.funcionalidades.map(f => `<li>${f}</li>`).join('')}
                     </ul>
                     ${prod.status === 'ativo' 
-                        ? `<a href="${prod.url}" target="_blank" rel="noopener noreferrer" class="btn btn-product">
+                        ? `<a href="${prod.url}" class="btn btn-product">
                                <i class="bi bi-box-arrow-up-right me-2"></i>Acessar Site
                            </a>`
                         : `<span class="btn btn-product-outline" style="cursor: default; opacity: 0.7;">
