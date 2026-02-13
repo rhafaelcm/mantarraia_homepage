@@ -15,7 +15,7 @@ const produtos = [
         descricaoDetalhada: "O RaiaDoc é um sistema de gestão de documentação e contabilidade municipal desenvolvido especialmente para atender às necessidades de prefeituras e órgãos públicos. A plataforma centraliza todo o processo de gestão financeira, desde o registro de empenhos até o controle de pagamentos, oferecendo uma solução integrada que simplifica o trabalho da administração pública.",
         url: "https://raiadoc.com.br",
         icone: "bi-building",
-        imagem: null, // Substituir pelo caminho da screenshot quando disponível
+        imagem: "img/raiadoc_painel-600px.png",
         funcionalidades: [
             "Gestão de Empenhos",
             "Liquidações e Aprovações",
@@ -35,7 +35,7 @@ const produtos = [
         descricaoDetalhada: "O RaiaAgenda é uma plataforma de agendamento e reserva de horários desenvolvida para facilitar a organização de espaços compartilhados. Ideal para escolas que precisam gerenciar salas de tecnologia, laboratórios e outros ambientes, o sistema permite que os usuários realizem reservas de forma prática e organizada, evitando conflitos de horário e otimizando o uso dos recursos.",
         url: "https://raiaagenda.com.br",
         icone: "bi-calendar-check",
-        imagem: null,
+        imagem: "img/raiaagenda_painel-600px.png",
         funcionalidades: [
             "Agendamento de salas e espaços",
             "Reserva de horários",
